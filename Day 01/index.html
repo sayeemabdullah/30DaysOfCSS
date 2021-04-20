@@ -4,12 +4,46 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
-    <title>Payment Page</title>
+    <title>Credit Card Checkout Page</title>
   </head>
   <body>
     <div class="paymentDiv">
-      <div class="paymentCard"></div>
+      <div class="paymentCard">
+        <div class="heading">
+          <h1 class="headingText">Credit Card Checkout</h1>
+          <img class="headingImage" src="./images/visa-mastercard.png" />
+        </div>
+
+        <hr />
+        <div class="name">
+          <label for="name">CARDHOLDER'S NAME</label>
+          <input type="text" id="name" name="name" />
+        </div>
+        <div class="number">
+          <label for="number">CARD NUMBER</label>
+          <input type="number" id="number" name="number" />
+        </div>
+        <div class="securityInfo">
+          <div class="date">
+            <label for="date">EXPIRY DATE</label>
+            <input type="number" id="date" name="date" min="01" max="31" />
+            <input type="number" id="date" name="date" min="00" max="99" />
+          </div>
+          <div class="cvc">
+            <label for="cvc">CVC</label>
+            <input type="number" id="cvc" name="date" min="01" max="99" />
+          </div>
+        </div>
+        <div>
+          <button class="payButton">Pay Now</button>
+        </div>
+      </div>
     </div>
   </body>
 </html>

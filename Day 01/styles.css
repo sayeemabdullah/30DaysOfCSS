@@ -12,7 +12,82 @@ html {
 
 .paymentCard {
   background-color: #f7faf8;
-  height: 60rem;
+  height: 40rem;
   width: 40rem;
   border-radius: 2%;
+  padding: 0 1.5rem 0 1.5rem;
+}
+
+.heading {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.headingText {
+  text-align: left;
+  color: #cc315c;
+  font-family: "Roboto", sans-serif;
+  display: inline;
+}
+
+.headingImage {
+  height: 3rem;
+  width: 10rem;
+  float: right;
+}
+
+label {
+  color: #b3b3b3;
+  display: block;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+  border: 1px solid #b3b3b3;
+  border-radius: 2%;
+  background-color: #f7faf8;
+}
+
+.name,
+.number {
+  margin-top: 2rem;
+}
+
+.securityInfo {
+  /* background-color: red; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  margin-top: 2rem;
+}
+
+.date input[type="number"] {
+  width: 40%;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+  border: 1px solid #b3b3b3;
+  border-radius: 2%;
+  background-color: #f7faf8;
+}
+
+.cvc input[type="number"] {
+  width: 40%;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+  border: 1px solid #b3b3b3;
+  border-radius: 2%;
+  background-color: #f7faf8;
+}
+
+.payButton {
+  color: white;
+  background-color: #cc315c;
+  width: 100%;
+  border: none;
+  text-align: center;
+  margin-top: 3rem;
+  padding: 1.5rem 0 1.5rem 0;
 }
